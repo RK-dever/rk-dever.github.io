@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于本站 - 元气正太小站</title>
+    <link rel="stylesheet"href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1> 元气正太小站</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="characters.html" >角色图鉴</a></li>
+                <li><a href="anime.html">番剧推荐</a></li>
+                <li><a href="#" class="current">关于本站</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>关于本站</h2>
+
+        <section class="about-me">
+            <h3>站长介绍</h3>
+            <img src="images/touxiang.jpg" alt="站长头像">
+            <p>大家好。我是一名二次元爱好者，正在用刚学的HTML + CSS 搭这个小站。</p>
+            <p>这里收录的是我喜欢的角色和番剧，纯粹同好分享，不商用 ~</p>
+        </section>
+        <section>
+            <h3>留言板</h3>
+            <form class="about-form" onsubmit="alert('不是，你还真填啊😝'); return false;">
+                <label for="nickname">你的昵称：</label>
+                <input type="text" id="nickname" placeholder="怎么称呼你？">
+
+                <label for="favorite">最喜欢的角色：</label>
+                <input type="text" id="favorite" placeholder="比如：广濑爱贵">
+
+                <label for="message">想说的话：</label>
+                <textarea type="text" id="message" rows="5" placeholder="随便聊点什么吧"></textarea>
+
+                <button type="submit">提交留言</button>
+            </form>
+            <p><small>目前仅作展示，暂未接入后台，点提交不会真的发送。</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 元气正太小站 | 分享二次元可爱小正太的一切</p>
+        <p><small>本站为非商业爱好者网站，图片版权归原作者所有</small></p>
+    </footer>
+    
+    
+</body>
+</html>
