@@ -1,0 +1,84 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: "Microsoft YaHei","WenQuanYiMicro Hei",sans-serif;
+    background: #fff9e6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header,main,footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #87ceeb;
+}
+
+main { min-height: 60vh; padding-bottom: 30px;}
+main h2 { color: #87ceeb; margin: 16px 0 4px; }
+
+#today-line { color: #888; font-size: 14px; margin-bottom: 16px;}
+
+.schedule-list { padding-left: 24px;}
+
+.lesson {
+    background: #fff;
+    border: 2px solid #87ceeb;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.lesson h3 { color: #ffd700; margin-bottom: 4px;}
+.lesson p { color: #2f5d8a; font-size: 14px;}
+
+.lesson.next {
+    border-color: #d1477a;
+    box-shadow: 0 0 0 3px #ffe0ec;
+}
+
+.badge {
+    display: inline-block;
+    background: #d1477a;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.hint { color: #FF0000; font-size: 16px; margin-top: 8px;}
+
+footer {
+    border-top: 1px dashed #ccc;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    padding: 16px 20px;
+}
+
+@media(max-width: 600px) {
+    header,main,footer { padding: 0 14px;}
+
+    main h2 { font-size: 20px;}
+
+    #today-line { font-size: 15px;}
+
+    .schedule-list {padding-left: 20px;}
+
+    .lesson { padding-left: 14px; padding-right: 14px;}
+
+    .lesson h3 { font-size: 17px;}
+    .lesson p { font-size: 15px;}
+
+    .badge {font-size: 13px;}
+
+    .hint { font-size: 14px;}
+    footer { font-size: 14px;}
+}

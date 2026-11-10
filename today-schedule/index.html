@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日课表</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>今日课表</h1>
+    </header> 
+
+    <main>
+        <h2>今天上什么</h2>
+        <p id="today-line">（日期待填）</p>
+
+        <ol id="schedule-list" class="schedule-list">
+            <li class="lesson">
+                <h3>大学英语</h3>
+                <p>08:20 - 09:55 · 教一 301</p>
+            </li>
+            <li class="lesson next">
+                <h3>道德与法治</h3>
+                <p>10:15 - 11:50 · 教一 205</p>
+                <span class="badge">下一节</span>
+            </li>
+            <li class="lesson">
+                <h3>网页设计与实践</h3>
+                <p>14:00 - 15:35 · 教一 205</p>
+            </li>
+            <li class="lesson">
+                <h3>体育</h3>
+                <p>16:00 - 17:30 · 教一 205</p>
+            </li>
+        </ol>
+
+        <p class="hint" id="hint">（状态提示待填）</p>
+    </main>
+
+    <footer>
+        <p>今日课表 · 个人用小工具，非商用</p>
+        <p>时间以你设备上的本地时间为准~</p>
+    </footer>
+
+    <script src="js/schedule.js"></script>
+    
+    
+</body>
+</html>
